@@ -1,0 +1,25 @@
+
+body{
+	background-color: red;
+}
+table{
+	border: 3px solid black;
+	border-collapse: collapse;
+	
+}
+thead{
+	background-color: lightgreen;
+	font-style:italic;
+	
+}
+td,th{
+	border: 3px solid black;
+	text-align: center;
+}
+tr:nth-child(even){
+	background-color:lightgrey;	
+}
+a{
+	display:block;
+	text-align: center;
+}

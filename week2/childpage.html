@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>CHILD PAGE</h2>
+
+    <button onclick="changeParent()">
+        Change parent page
+    </button>
+
+    <script>
+        function changeParent() {
+            if (window.opener) {
+                window.opener.document.body.style.backgroundColor = "red";
+                window.opener.document.body.innerHTML += "<p>Changed by child page</p>";
+            } else {
+                alert("No opener access");
+            }
+        }
+    </script>
+</body>
+
+<b>
+<a href="jnanpith.html" target= "_blank" rel= "noopener noreferrer">
+	normal jnanpith
+
+</a> 
+
+<a href= "jnanpithinternal.html" target= "_blank" rel="noopener noreferrer">
+	jnanpith with internal css
+</a>
+
+<a href= "jnanpithexternal.html" target= "_blank" rel="noopener noreferrer">
+	jnanpith with external css
+</a>
+
+</b>
+</html>
+
